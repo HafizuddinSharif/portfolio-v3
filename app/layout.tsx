@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import Navbar from "./(components)/Navbar";
 
 export const metadata: Metadata = {
   title: "Hafizuddin Sharif",
@@ -20,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetbrainsMono.variable} font-mono antialiased max-w-[720px] mx-auto`}>{children}</body>
+      <body className={`${jetbrainsMono.variable} font-mono antialiased max-w-[720px] mx-auto relative`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
