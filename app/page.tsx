@@ -1,101 +1,113 @@
-import Image from "next/image";
+import ReasonOneDiagram from "./(components)/ReasonOneDiagram";
+import CleanCode from "./(components)/CleanCode";
+import MessyCode from "./(components)/MessyCode";
+import ReasonThreeDiagram from "./(components)/ReasonThreeDiagram";
+import Project from "./(components)/Project";
+import NextPic from "../public/kerisik_banner.png";
 
 export default function Home() {
+  const Boxes = () => {
+    return (
+      <div className=" grid grid-cols-10 border-y border-y-lightGrey">
+        <div className=" border-r border-r-lightGrey h-10"></div>
+        <div className=" border-r border-r-lightGrey h-10"></div>
+        <div className=" border-r border-r-lightGrey h-10"></div>
+        <div className=" border-r border-r-lightGrey h-10"></div>
+        <div className=" border-r border-r-lightGrey h-10"></div>
+        <div className=" border-r border-r-lightGrey h-10"></div>
+        <div className=" border-r border-r-lightGrey h-10"></div>
+        <div className=" border-r border-r-lightGrey h-10"></div>
+        <div className=" border-r border-r-lightGrey h-10"></div>
+      </div>
+    );
+  };
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="border border-lightGrey my-10">
+      {/* Hero Section */}
+      <div id="hero" className="relative">
+        <Boxes />
+        <div className="font-bold text-3xl py-10 px-5 relative bg-my_bg_image bg-cover bg-center backdrop-blur-lg">
+          <h1 className="text-center">I BUILD BEAUTIFUL PRODUCTS THAT MATTERS</h1>
+          <div className="flex justify-center mt-3">
+            <div className="rounded-sm bg-gradient-to-r from-blue-400 to-blue-600 px-5 hover:from-white hover:to-white hover:text-black transition-all cursor-pointer py-1">
+              <p>Hire me!</p>
+            </div>
+          </div>
+          <div className="bg-black/40 backdrop-blur-2xl h-full w-full absolute top-0 left-0 -z-10"></div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <Boxes />
+        <div className="border-t border-t-lightGrey py-10 px-5">
+          <p className="text-justify">
+            <span className="font-bold text-blue-600">user-first approach</span> that prioritize user feedback while delivering modern and sleek design{" "}
+          </p>
+        </div>
+      </div>
+
+      {/* Why me section */}
+      <div id="whyMe">
+        <div className="border-t border-t-lightGrey py-10 px-5">
+          <h2 className="text-center text-2xl">
+            Why you should <span className=" font-extrabold text-red-500">work</span> with me?
+          </h2>
+        </div>
+        <div className="border-t border-t-lightGrey py-10 px-5">
+          <div>
+            <h3 className="text-xl">Full ownership towards my work</h3>
+            <p className="py-3">I treat every project like my own startup—committed, accountable, and always delivering with pride.</p>
+          </div>
+          <ReasonOneDiagram />
+        </div>
+        <div className="border-t border-t-lightGrey py-10 px-5">
+          <div>
+            <h3 className="text-xl">Writing clean and readable code for the future</h3>
+            <p className="py-3">{"I write code so clear that even future developers will thank me (or at least won't curse me)."}</p>
+          </div>
+          <div className="relative">
+            <MessyCode />
+            <CleanCode />
+          </div>
+        </div>
+        <div className="border-t border-t-lightGrey py-10 px-5">
+          <div>
+            <h3 className="text-xl">Tools agnostic</h3>
+            <p className="py-3">{"I don't marry tools—I date them, learn their quirks, and pick the best one for the job."}</p>
+          </div>
+        </div>
+        <ReasonThreeDiagram />
+      </div>
+
+      {/* Past projects section */}
+      <div id="pastProjects">
+        <div className="border-t border-t-lightGrey py-10 px-5">
+          <h2 className="text-center text-2xl">Some of my past projects</h2>
+        </div>
+        <Project title={"Kerisik: Recipe Manager"} description={"A utility app that stores recipe, plan meals, and generate grocery list."} imageUrl={NextPic} altImage={"Screenshot of Kerisik app"} />
+      </div>
+
+      {/* Contact me section */}
+      <div>
+        <form className="border-t border-t-lightGrey py-10 px-5 bg-lightDark">
+          <h2 className="text-2xl">Let's work together</h2>
+          <div className="my-5">
+            <label className="block mb-2" htmlFor="">
+              Your email
+            </label>
+            <input className="block w-full rounder-sm border border-lightGrey bg-black" type="email" name="" id="" />
+          </div>
+
+          <div className="my-5">
+            <label className="block mb-2" htmlFor="">
+              Your message
+            </label>
+            <textarea className="block w-full rounded-sm border border-lightGrey bg-black" name="" id=""></textarea>
+          </div>
+
+          <button className="block bg-blue-600 py-1 px-3 rounded-sm mt-3">
+            <p>Send message</p>
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
