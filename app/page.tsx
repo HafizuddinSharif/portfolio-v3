@@ -129,7 +129,7 @@ export default function Home() {
       {/* Contact me section */}
       <div id="contact">
         <form className="border-t border-t-lightGrey py-10 px-5 bg-lightDark">
-          <h2 className="text-2xl">Let's work together</h2>
+          <h2 className="text-2xl">{"Let's work together"}</h2>
           <div className="my-5">
             <label className="block mb-2" htmlFor="">
               Your email
