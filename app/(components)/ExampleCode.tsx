@@ -57,11 +57,11 @@ console.log(s([1, 2, 'three', 4, 5]));
       style={tomorrowNightBright}
       showLineNumbers
       customStyle={{
-        fontSize: width / 100 > 10 ? (width / 100 < 12 ? width / 100 : 12) : 10,
+        fontSize: width / 100 > 10 ? (width / 100 < 12 ? width / 100 : 12) : 5,
         borderBottomLeftRadius: "0.5rem",
         borderBottomRightRadius: "0.5rem",
         backgroundColor: "#0A0A0A",
-        padding: "1rem",
+        padding: "0.5rem",
       }}
     >
       {isClean ? codeString : messyCode}
