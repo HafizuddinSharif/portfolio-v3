@@ -42,6 +42,7 @@ export default function Home() {
       main.fromTo(".backblur", { opacity: 0 }, { opacity: 1, duration: 1.5 });
       main.fromTo(".heroText", { opacity: 0 }, { opacity: 1, duration: 1 });
       main.fromTo(".cta", { opacity: 0 }, { opacity: 1, duration: 1 });
+      main.fromTo(".others", { opacity: 0 }, { opacity: 1, duration: 2 });
     },
     { scope: container }
   ); // <-- scope for selector text (optional)
@@ -95,11 +96,30 @@ export default function Home() {
         </div>
 
         <Boxes />
-        <div className="border-t border-t-lightGrey py-10 px-5 gap-3 flex flex-col">
+        <div className="others border-t border-t-lightGrey py-10 px-5 gap-3 flex flex-col">
           <p>Hi! I'm Sharif</p>
-          <p>I'm currently building Kerisik, a recipe manager app that helps you store recipes, plan meals, and generate grocery lists.</p>
-          <p>Took an undergraduate degree in Computer Science and currently working for a bank.</p>
-          <p>I yap a lot in Youtube and X (formerly Twitter) and played volleyball to keep myself for sitting too long in front of the computer.</p>
+          <p>
+            I'm currently building{" "}
+            <Link href="https://kerisik-web.vercel.app" target="_blank" className="font-bold text-green-500 hover:text-green-300">
+              Kerisik
+            </Link>
+            , a recipe manager app that helps you store recipes, plan meals, and generate grocery lists.
+          </p>
+          <p>
+            Took an undergraduate degree in <span className="font-bold text-blue-500">Computer Science</span> and currently working for a{" "}
+            <span className="font-bold text-red-500">bank</span>.
+          </p>
+          <p>
+            I yap a lot in{" "}
+            <Link href="https://www.youtube.com/@sharippu" target="_blank" className="font-bold text-red-500 hover:text-red-300">
+              Youtube
+            </Link>{" "}
+            and{" "}
+            <Link href="https://x.com/sharippu" target="_blank" className="font-bold text-blue-500 hover:text-blue-300">
+              X (formerly Twitter)
+            </Link>{" "}
+            and played <span className="font-bold text-green-500">volleyball</span> to keep myself from sitting too long in front of the computer.
+          </p>
         </div>
       </div>
 

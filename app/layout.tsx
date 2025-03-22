@@ -4,8 +4,43 @@ import "./globals.css";
 import Navbar from "./(components)/Navbar";
 
 export const metadata: Metadata = {
-  title: "Hafizuddin Sharif",
-  description: "Developer portfolio of Hafizuddin Sharif",
+  title: "Hafizuddin Sharif | Software Developer",
+  description:
+    "Portfolio of Hafizuddin Sharif - Full Stack Developer specializing in web development, software engineering, and modern JavaScript frameworks.",
+  keywords: ["software developer", "web developer", "full stack", "portfolio", "Hafizuddin Sharif", "JavaScript", "React", "Next.js", "Malaysia"],
+  authors: [{ name: "Hafizuddin Sharif" }],
+  creator: "Hafizuddin Sharif",
+  publisher: "Hafizuddin Sharif",
+  robots: "index, follow",
+  metadataBase: new URL("https://hafizuddinsharif.com"), // Replace with your actual domain
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://hafizuddinsharif.com", // Replace with your actual domain
+    title: "Hafizuddin Sharif | Software Developer",
+    description:
+      "Portfolio of Hafizuddin Sharif - Full Stack Developer specializing in web development, software engineering, and modern JavaScript frameworks.",
+    siteName: "Hafizuddin Sharif Portfolio",
+    images: [
+      {
+        url: "/og-image.png", // Add your actual Open Graph image
+        width: 1200,
+        height: 630,
+        alt: "Hafizuddin Sharif - Software Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hafizuddin Sharif | Software Developer",
+    description:
+      "Portfolio of Hafizuddin Sharif - Full Stack Developer specializing in web development, software engineering, and modern JavaScript frameworks.",
+    creator: "@sharippu", // Replace with your actual Twitter handle
+    images: ["/og-image.png"], // Same as OG image or a Twitter-specific one
+  },
 };
 
 const jetbrainsMono = JetBrains_Mono({
