@@ -73,7 +73,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="border border-lightGrey mb-10">
+    <div className="border border-lightGrey mb-10 mx-3">
       {/* Hero Section */}
       <div ref={container} id="hero" className="relative">
         <Boxes />
