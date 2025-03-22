@@ -40,7 +40,7 @@ function s(a: any) {
 console.log(s([1, 2, 'three', 4, 5]));
   `;
 
-  const [width, setWidth] = useState<number | undefined>(undefined);
+  const [width, setWidth] = useState<number>(100);
   const resizeRef = useRef(() => {});
 
   useEffect(() => {
@@ -57,7 +57,7 @@ console.log(s([1, 2, 'three', 4, 5]));
       style={tomorrowNightBright}
       showLineNumbers
       customStyle={{
-        fontSize: width ? width / 100 : 12,
+        fontSize: width / 100 > 10 ? (width / 100 < 12 ? width / 100 : 12) : 10,
         borderBottomLeftRadius: "0.5rem",
         borderBottomRightRadius: "0.5rem",
         backgroundColor: "#0A0A0A",
